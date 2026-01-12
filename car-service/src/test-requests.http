@@ -1,0 +1,24 @@
+### Додати перше авто (Toyota Camry)
+POST http://localhost:8080/car-service/api/cars
+Content-Type: application/json
+
+{
+  "model": "Toyota Camry",
+  "licensePlate": "AA1010BB",
+  "pricePerDay": 45.00,
+  "status": "AVAILABLE"
+}
+
+### Додати друге авто (BMW X5)
+POST http://localhost:8080/car-service/api/cars
+Content-Type: application/json
+
+{
+  "model": "BMW X5",
+  "licensePlate": "BC2020CA",
+  "pricePerDay": 120.00,
+  "status": "AVAILABLE"
+}
+
+### Перевірити список всіх авто (Має повернути 2 машини)
+GET http://localhost:8080/car-service/api/cars
